@@ -1,0 +1,124 @@
+@import "@/assets/scss/_variaveis.scss"; //importando as variaveis global do scss
+@import "@/assets/scss/_mixins.scss";
+
+.navbar{
+    position:fixed;
+    height: 4rem;
+    width: 100%;
+    background-color: $corazul;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.468); /* offset-x | offset-y | blur-radius | color */
+}
+
+.botoes{
+    margin-left: 1rem;
+}
+
+a{
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    display: inline-block;      /* <--- isso faz o scale funcionar */
+    transition: .4s;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+.preferencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.tema{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button{
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .4s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+p{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+img{
+    height: 1rem;
+    width: 2rem;
+    object-fit: fill;
+    border-radius: 0.3rem;
+}
+
+.bandeira{
+    margin-left: 1rem;
+}
+
+.menu img{
+    height: 3rem;    
+}
+
+.menu{
+    margin-left: 1rem;
+    display: none;
+}
+
+.desaparece{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px){ /* para celular e tablet */
+    .menu{
+        display: flex;
+    }
+
+    .botoes{
+        display: none;
+    }
+
+    .aparecemenu{
+        position: absolute;
+        top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $corazul;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.468); /* offset-x | offset-y | blur-radius | color */
+    }
+
+    a{
+        height: 2rem;
+    }
+
+    a, p{
+        font-size: 1.1rem;
+    }
+}
