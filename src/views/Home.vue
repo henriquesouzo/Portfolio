@@ -1,21 +1,58 @@
 <template>
   <div class="home">
-    <Navbar/>
+    <Navbar @cor="tema($event)" @traduzir="traduz($event)" />
 
-    <section id="sec1" style="height: 100vh; background: lightblue">Seção 1</section>
-    <section id="sec2" style="height: 100vh; background: lightgreen">Seção 2</section>
+    <Sobre :cor="cor" :traduzir="traduzir"/>
+
+    <Conhecimentos :cor="cor" :traduzir="traduzir" />
+   
   </div>
 </template>
 
 <script>
+import Conhecimentos from '@/components/Conhecimentos.vue';
+import { useUsuarioStore } from '../stores/autenticacao'; //pinia cookie do navegador
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
+import Sobre from '@/components/Sobre.vue';
 
 export default {
   name: 'Home',
 
+  data(){
+    return{
+      cor: false,
+      traduzir: false,
+    }
+  },
+
+  created(){
+      this.atualiza()
+  },
+
   components: {
-    Navbar
+    Navbar,
+    Sobre,
+    Conhecimentos
+  },
+
+  methods: {
+    atualiza(){
+        const store = useUsuarioStore();
+
+        this.traduzir = store.portugues;
+        this.cor = store.diurno;
+    },
+
+    traduz(dado){
+      //console.log(dado);
+      this.traduzir = dado.traduzir;
+      //console.log(this.traduzir);
+    },
+
+    tema(dado){
+      this.cor = dado.cor;
+    }
   }
 }
 </script>

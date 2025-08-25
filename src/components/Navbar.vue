@@ -5,17 +5,17 @@
     </div>
 
     <div :class="{'botoes': this.menu == false, 'aparecemenu': this.menu == true}">    
-      <a href="#sec1" v-if="this.portugues == true">Início</a>
-      <a href="#sec1" v-else>Home</a>
+      <a @click.prevent="scrollTo('sec1')" v-if="portugues">Início</a>
+      <a @click.prevent="scrollTo('sec1')" v-else>Home</a>
 
-      <a href="#sec2" v-if="this.portugues == true">Conhecimentos</a>
-      <a href="#sec2" v-else>Knowledges</a>
+      <a @click.prevent="scrollTo('sec2')" v-if="portugues">Conhecimentos</a>
+      <a @click.prevent="scrollTo('sec2')" v-else>Knowledges</a>
 
-      <a href="#sec3" v-if="this.portugues == true">Projetos</a>
-      <a href="#sec3" v-else>Works</a>
+      <a @click.prevent="scrollTo('sec3')" v-if="portugues">Projetos</a>
+      <a @click.prevent="scrollTo('sec3')" v-else>Works</a>
 
-      <a href="#sec4" v-if="this.portugues == true">Contato</a>
-      <a href="#sec4" v-else>Contact</a>
+      <a @click.prevent="scrollTo('sec4')" v-if="portugues">Contato</a>
+      <a @click.prevent="scrollTo('sec4')" v-else>Contact</a>
     </div>
 
     <div class="preferencia">      
@@ -49,7 +49,7 @@
         <img class="bandeira" src="@/assets/imagens/usa.png" alt="usa">
       </button>
 
-    </div>
+    </div>    
   </div>
 
   
@@ -59,7 +59,9 @@
 import { useUsuarioStore } from '../stores/autenticacao'; //pinia cookie do navegador
 
 export default { 
-  name: 'Navbar',
+  name: 'Navbar',  
+
+  emits: ["traduzir", "cor"],
 
   data(){
       return{
@@ -74,6 +76,19 @@ export default {
   },
 
   methods: {
+    scrollTo(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      const navbarHeight = document.querySelector(".navbar")?.offsetHeight || 0;
+      const top = el.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth"
+      });
+    }
+  },
+
     atualiza(){
       const store = useUsuarioStore();
 
@@ -85,19 +100,22 @@ export default {
       const store = useUsuarioStore();
 
       this.diurno = !this.diurno;
-      store.noturno(this.diurno);
+      store.noturno({diurno: this.diurno});
+      this.$emit("cor", {cor: this.diurno});
     },
 
     traduzir(){
       const store = useUsuarioStore();
 
       this.portugues = !this.portugues;
-      store.linguagem(this.portugues);
+      store.linguagem({portugues: this.portugues});
+      this.$emit("traduzir", {traduzir: this.portugues});
     },
 
     botaoMenu(){
       this.menu = !this.menu;
-    }
+    },
+    
   }
 
 }

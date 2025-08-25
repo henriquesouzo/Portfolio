@@ -1,0 +1,117 @@
+@import "@/assets/scss/_variaveis.scss"; //importando as variaveis global do scss
+@import "@/assets/scss/_mixins.scss";
+
+.eu{
+    width: 100%;
+    background-color: aliceblue;
+    margin-top: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap:wrap-reverse;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.468); /* offset-x | offset-y | blur-radius | color */    
+}
+
+.eudark{
+    width: 100%;
+    background-color: rgb(35, 34, 34);
+    color: white;
+    margin-top: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.468); /* offset-x | offset-y | blur-radius | color */ 
+}
+
+.fundo{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 20%); 
+    z-index: 0;
+    object-fit: fill;
+    opacity: 0.3; /* de 0 (invisível) até 1 (opaco) */
+    max-width: 100%;
+}
+
+.apresentacao{
+    width: 60%;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.efeito{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    height: 22rem;
+    border-radius: 100%;
+    animation: tombar 10s infinite ease-in-out;
+      transform-style: preserve-3d;
+}
+
+  @keyframes tombar {
+      0%   { transform: rotateX(40deg) rotateY(0deg); }   /* cima */
+      25%  { transform: rotateX(-40deg) rotateY(0deg); }  /* baixo */
+      50%  { transform: rotateX(0deg) rotateY(-40deg); }  /* esquerda */
+      75%  { transform: rotateX(0deg) rotateY(40deg); }   /* direita */
+      100% { transform: rotateX(40deg) rotateY(0deg); }   /* volta ao cima */
+    }
+
+.cookie{
+    position: absolute;
+    bottom: 0%;
+    right: 25%;
+    background-color: rgba(3, 3, 59, 0.436);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.cookie button{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: $corazul;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.cookie button:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px){ /* para celular e tablet */
+    .eu, .eudark{
+        flex-direction: column;
+    }
+
+    .fundo{
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 50%); 
+    }
+
+    .apresentacao, .efeito{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}

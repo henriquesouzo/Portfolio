@@ -6,7 +6,7 @@
 * {
     padding: 0;
     margin: 0;    
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:cursive;
     box-sizing: border-box; /* limita os elementos filho na medida maxima do pai, sem passar */
   }
 

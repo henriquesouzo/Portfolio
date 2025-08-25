@@ -23,7 +23,7 @@ export var useUsuarioStore = defineStore("usuario", {
       },
 
       aceitoCookie(){
-        this.cookie = true
+        this.cookie = true;
       }
     },    
 
