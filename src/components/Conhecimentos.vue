@@ -43,7 +43,22 @@
 
             <div class="box">
                 <p>C#</p>
-                <img src="@/assets/imagens/logoC.png" alt="javascript" id="logoc">
+                <img src="@/assets/imagens/logoC.png" alt="c" id="logoc">
+            </div>
+
+            <div class="box">
+                <p>MySQL</p>
+                <img src="@/assets/imagens/mysql.svg" alt="mysql" id="mysql">
+            </div>
+
+             <div class="box">
+                <p>MongoDB</p>
+                <img src="@/assets/imagens/mongodb.svg" alt="mongodb">
+            </div>
+
+            <div class="box">
+                <p>PostgreSQL</p>
+                <img src="@/assets/imagens/postgresql.svg" alt="postgresql">
             </div>
         </div>
     </div>

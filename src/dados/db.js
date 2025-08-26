@@ -11,7 +11,7 @@ export const sites = [
         "titulotraduzido": "Online Fashion Store Website",
         "descricao": "Um site pessoal para o meu portfólio, uma loja online completa com formas de pagamentos, carrinho, painel de usuários, suporte e uma Dashboard para gerenciar o site. O FrontEnd foi feito com Nuxt3 e utilizando bibliotecas como Pinia, Fetch e Recaptcha, o Backend foi feito com NodeJS e o banco de dados com PostGreSQL.",
         "descricaotraduzido": "A personal website for my portfolio, a complete online store with payment methods, shopping cart, user panel, support, and a dashboard to manage the site. The FrontEnd was built with Nuxt3 and libraries such as Pinia, Fetch, and Recaptcha, while the Backend was developed with NodeJS and the database with PostgreSQL.",
-        "fotos": ["/image/siteloja1.png", "/image/siteloja2.png", "/image/siteloja3.png", "/image/siteloja4.png", "/image/siteloja5.png", "/image/siteloja6.png", "/image/siteloja7.png", "/image/siteloja8.png", "/image/siteloja9.png", "/image/siteloja10.png"]
+        "fotos": ["/image/siteloja1.png", "/image/siteloja2.png", "/image/siteloja3.png", "/image/siteloja4.png", "/image/siteloja5.png", "/image/siteloja6.png", "/image/siteloja7.png", "/image/siteloja8.png", "/image/siteloja9.png"]
     },
     {
         "titulo": "Site de Dashboard para gerenciar um jogo de Sueca",

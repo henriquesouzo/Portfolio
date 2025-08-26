@@ -90,8 +90,7 @@ h2{
 .itens{
     position: relative;
     width: 100%;
-    min-height: 100%;
-    border: 2px solid white;
+    min-height: 100%;    
 }
 
 .esquerda, .direita, .fechar{
@@ -152,5 +151,29 @@ h2{
 
     .card{
         width: 100%;
+    }
+
+    .fotoItem{
+        top: 38%;
+        height: 50%;
+        max-width: 90%;
+    }
+
+    .esquerda{
+        top: 35%;
+        left: 1%;
+    }
+
+    .direita{
+        top: 35%;
+        right: 1%;
+    }
+
+    .fechar{
+        left: 90%;
+    }
+
+    .descricao{
+        top: 65%;
     }
 }
