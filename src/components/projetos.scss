@@ -1,0 +1,156 @@
+@import "@/assets/scss/_variaveis.scss"; //importando as variaveis global do scss
+@import "@/assets/scss/_mixins.scss";
+
+.projetos{
+    width: 100%;
+    background-color: aliceblue;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.projetosdark{
+    width: 100%;
+    background-color: rgb(35, 34, 34);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+h1{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.card{
+    width: 40%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $corazul;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+    overflow: hidden;      /* garante que a imagem não ultrapasse */
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.468); /* offset-x | offset-y | blur-radius | color */       
+    background-color: $corazul;
+    color: white;
+    text-align: center;
+    margin: 0% 2% 3% 6%; 
+    transition: .4s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+img{
+    height: 18rem;
+}
+
+h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.desaparece{
+    display: none;
+}
+
+.trabalho{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.433);
+    color: white;
+    overflow-y: auto;
+}
+
+.itens{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    border: 2px solid white;
+}
+
+.esquerda, .direita, .fechar{
+    position: absolute;     
+    z-index: 1;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $corazul;
+    cursor: pointer;
+    text-align: center;
+}
+
+.esquerda{
+    top: 40%;   
+    left: 15%;
+}
+
+.direita{
+    top: 40%;   
+    right: 15%;
+}
+
+.fechar{
+    top: 10%;
+    left: 80%;
+}
+
+.fotoItem{
+    position: absolute;
+    height: 30rem;
+    width: 60rem;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.descricao{
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    background-color: $corazul;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 768px){ /* para celular e tablet */
+    .cards{
+        justify-content: center;
+    }
+
+    .card{
+        width: 100%;
+    }
+}

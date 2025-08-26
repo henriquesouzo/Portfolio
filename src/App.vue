@@ -13,4 +13,14 @@
   html, body {
     scroll-behavior: smooth; /* Ativa o scroll suave */
   }
+  
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(3, 3, 59);
+    border-radius: 1rem;
+}
 </style>

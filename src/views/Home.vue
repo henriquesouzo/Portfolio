@@ -6,6 +6,7 @@
 
     <Conhecimentos :cor="cor" :traduzir="traduzir" />
    
+    <Projetos :cor="cor" :traduzir="traduzir" />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import { useUsuarioStore } from '../stores/autenticacao'; //pinia cookie do nave
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
 import Sobre from '@/components/Sobre.vue';
+import Projetos from '@/components/Projetos.vue';
 
 export default {
   name: 'Home',
@@ -33,7 +35,8 @@ export default {
   components: {
     Navbar,
     Sobre,
-    Conhecimentos
+    Conhecimentos,
+    Projetos
   },
 
   methods: {

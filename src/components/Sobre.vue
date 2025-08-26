@@ -2,7 +2,8 @@
     <section id="sec1">
         <div class="sobre">          
             <div :class="{'eu': cor == false, 'eudark': cor == true}">            
-                <img src="@/assets/imagens/fundocodigo.png" alt="fundo" class="fundo">
+                <img src="@/assets/imagens/fundocodigo.png" alt="fundo" :class="{'fundo': cor == false, 'desaparece': cor == true}">
+                <img src="@/assets/imagens/fundocodigodark.png" alt="fundo" :class="{'fundo': cor == true, 'desaparece': cor == false}">
 
                 <div class="apresentacao">        
                     <p v-if="traduzir == true">Eu sou o Henrique Souzo, Desenvolvedor de Web Sites, Aplicativos Mobile e Jogos com mais de 3 anos de experiência no ramo. 

@@ -52,29 +52,12 @@
 </template>
 
 <script>
-    import { useUsuarioStore } from '../stores/autenticacao'; //pinia cookie do navegador
-
     export default { 
     name: 'Sobre',
 
     props: {
         cor: true,
         traduzir: true,
-    },
-
-    data(){
-        return{
-            
-        }
-    },
-
-    created(){
-        
-    },
-
-    methods: {
-        
-
     }
 }
 </script>

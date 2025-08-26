@@ -7,8 +7,8 @@
     margin-top: 4rem;
     padding: 1rem;
     display: flex;
-    flex-wrap:wrap-reverse;
     flex-direction: row;
+    flex-wrap: wrap;    
     justify-items: center;
     align-items: center;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.468); /* offset-x | offset-y | blur-radius | color */    
@@ -58,16 +58,17 @@
 .foto{
     height: 22rem;
     border-radius: 100%;
-    animation: tombar 10s infinite ease-in-out;
-      transform-style: preserve-3d;
+    animation: tombar 20s infinite ease-in-out;
+    transform-style: preserve-3d;
 }
 
-  @keyframes tombar {
-      0%   { transform: rotateX(40deg) rotateY(0deg); }   /* cima */
-      25%  { transform: rotateX(-40deg) rotateY(0deg); }  /* baixo */
-      50%  { transform: rotateX(0deg) rotateY(-40deg); }  /* esquerda */
-      75%  { transform: rotateX(0deg) rotateY(40deg); }   /* direita */
-      100% { transform: rotateX(40deg) rotateY(0deg); }   /* volta ao cima */
+  @keyframes tombar { /* rotateX é para cima ou baixo e Y para os lados */
+      0%   { transform: rotateX(0deg) rotateY(0deg); }   
+      20%  { transform: rotateX(0deg) rotateY(50deg); }  
+      40%  { transform: rotateX(0deg) rotateY(-50deg); }  
+      60%  { transform: rotateX(50deg) rotateY(0deg); }  
+      80%  { transform: rotateX(-50deg) rotateY(0deg); }   
+      100% { transform: rotateX(0deg) rotateY(0deg); }   
     }
 
 .cookie{
@@ -98,9 +99,14 @@
     transform: scale(1.1);
 }
 
+.desaparece{
+    display: none;
+}
+
 @media only screen and (max-width: 768px){ /* para celular e tablet */
     .eu, .eudark{
         flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .fundo{
