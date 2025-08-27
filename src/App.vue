@@ -3,7 +3,7 @@
 </template>
 
 <style>
-@font-face {
+@font-face { /* importando a fonte, se por acaso o navegador da pessoa não tiver, vai baixar. */
   font-family: 'ComicSansCustom';
   src: url('@/assets/fonts/comic.ttf') format('truetype');
   font-weight: normal;

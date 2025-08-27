@@ -6,7 +6,7 @@
         <h1 v-else>Contact</h1>
 
         <div class="dados">
-            <div class="email">
+            <div class="email conteudo">
                 <img src="@/assets/imagens/email.svg" alt="email">
                 <h2>E-mail</h2>
                 <p>Entre em contato por e-mail.</p>
@@ -15,7 +15,7 @@
                 </a>
             </div>
 
-            <div class="email">
+            <div class="email conteudo">
                 <img src="@/assets/imagens/telefone.svg" alt="telefone">
                 <h2 v-if="traduzir == true">Telefone</h2>
                 <h2 v-else>Phone</h2>
@@ -26,7 +26,7 @@
                 </a>
             </div>
 
-            <div class="email">
+            <div class="email conteudo">
                 <img src="@/assets/imagens/redes.svg" alt="redes">
                 <h2 v-if="traduzir == true">Redes Sociais</h2>
                 <h2 v-else>Social Media</h2>
