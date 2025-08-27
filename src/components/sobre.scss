@@ -62,16 +62,19 @@
 }
 
 .cookie{
-    position: absolute;
-    bottom: 0%;
-    right: 25%;
-    background-color: rgba(3, 3, 59, 0.436);
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(3, 3, 59, 0.79);
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     border-radius: 1rem;
+    z-index: 3;
 }
 
 .cookie button{

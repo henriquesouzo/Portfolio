@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 
 export var useUsuarioStore = defineStore("usuario", {
   state: () => ({
-        diurno: true,  
+        diurno: false,  
         portugues: true,
         cookie: false
     }),
