@@ -1,0 +1,52 @@
+@import "@/assets/scss/_variaveis.scss"; //importando as variaveis global do scss
+@import "@/assets/scss/_mixins.scss";
+
+.contato{
+    background-color: $corazul;
+    color: white;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    display: inline-block;      /* <--- isso faz o scale funcionar */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+}
+
+.icone{
+    height: 2rem;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;    
+}
+
+a:hover{
+    transform: scale(1.05);
+}

@@ -7,16 +7,19 @@
     <Conhecimentos :cor="cor" :traduzir="traduzir" />
    
     <Projetos :cor="cor" :traduzir="traduzir" />
+
+    <Contato :cor="cor" :traduzir="traduzir" />
   </div>
 </template>
 
 <script>
-import Conhecimentos from '@/components/Conhecimentos.vue';
 import { useUsuarioStore } from '../stores/autenticacao'; //pinia cookie do navegador
-// @ is an alias to /src
+
 import Navbar from '@/components/Navbar.vue'
 import Sobre from '@/components/Sobre.vue';
+import Conhecimentos from '@/components/Conhecimentos.vue';
 import Projetos from '@/components/Projetos.vue';
+import Contato from '@/components/Contato.vue';
 
 export default {
   name: 'Home',
@@ -36,7 +39,8 @@ export default {
     Navbar,
     Sobre,
     Conhecimentos,
-    Projetos
+    Projetos,
+    Contato
   },
 
   methods: {

@@ -30,8 +30,8 @@ export const sites = [
     {
         "titulo": "Jogo de Basquete",
         "titulotraduzido": "Basketball Game",
-        "descricao": "Um jogo offline de Basquete para PC e Mobile, foi feito na Engine Unity e as imagens do jogo foram realizadas por mim também.",
-        "descricaotraduzido": "An offline basketball game for PC and mobile, developed in the Unity Engine. All the game graphics were created by me.",
+        "descricao": "Um jogo offline de Basquete para PC e Mobile, foi feito na Engine Unity e as imagens do jogo foram realizadas por mim também. Este jogo foi um trabalho feito para um cliente.",
+        "descricaotraduzido": "An offline basketball game for PC and mobile, developed in the Unity Engine. All the game graphics were created by me. This game was a project developed for a client.",
         "fotos": ["/image/jogobasquete1.png", "/image/jogobasquete2.png"]
     },
     {
