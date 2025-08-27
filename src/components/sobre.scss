@@ -56,20 +56,10 @@
 }
 
 .foto{
-    height: 22rem;
-    border-radius: 100%;
-    animation: tombar 20s infinite ease-in-out;
-    transform-style: preserve-3d;
+    height: 20rem;
+    border-radius: 10%;
+    z-index: 2;
 }
-
-  @keyframes tombar { /* rotateX é para cima ou baixo e Y para os lados */
-      0%   { transform: rotateX(0deg) rotateY(0deg); }   
-      20%  { transform: rotateX(0deg) rotateY(50deg); }  
-      40%  { transform: rotateX(0deg) rotateY(-50deg); }  
-      60%  { transform: rotateX(50deg) rotateY(0deg); }  
-      80%  { transform: rotateX(-50deg) rotateY(0deg); }   
-      100% { transform: rotateX(0deg) rotateY(0deg); }   
-    }
 
 .cookie{
     position: absolute;
