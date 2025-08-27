@@ -3,10 +3,17 @@
 </template>
 
 <style>
+@font-face {
+  font-family: 'ComicSansCustom';
+  src: url('@/assets/fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;    
-    font-family:cursive;
+    font-family: "ComicSansCustom", cursive;
     box-sizing: border-box; /* limita os elementos filho na medida maxima do pai, sem passar */
   }
 
