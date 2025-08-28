@@ -7,12 +7,12 @@
 
                 <div class="apresentacao">        
                     <p v-if="traduzir == true">Eu sou o Henrique Souzo, tenho 28 anos, Desenvolvedor de Web Sites, Aplicativos Mobile e Jogos com mais de 3 anos de experiência no ramo. 
-                        Nasci no Brasil na cidade de São Paulo. Meu sonho é colaborar com sistemas que mude a vida das pessoas para melhor, inclusive a minha,
-                        gerando reconhecimento nacional e internacional e poder desfrutar e compartilhar com a minha família as minhas conquistas.                
+                        Nasci no Brasil na cidade de São Paulo. Tenho Formação de Bacharelado em Engenharia Elétrica e Técnico em Eletrônica, 
+                        por isso, durante esses cursos aprendi a linguagem de programação C que é utilizada em Microprocessadores PIC, devido a isso, facilitou a minha aprendizagem em outras linguagens de programação como Javascript e C#.         
                     </p>
-                    <p v-else>I'm Henrique Souzo, I'm 28 years old, a Web, Mobile App, and Game Developer with over 3 years of experience. 
-                        Born in São Paulo, Brazil, my dream is to create systems that improve people's lives — including my own — while earning national and international recognition. 
-                        Above all, I strive to enjoy and share my achievements with my family.</p>
+                    <p v-else>I'm Henrique Souzo, 28 years old, a Developer of Websites, Mobile Applications, and Games with over 3 years of experience in the field.
+                    I was born in Brazil, in the city of São Paulo. I hold a Bachelor's degree in Electrical Engineering and a Technical degree in Electronics.
+                    During these studies, I learned the C programming language, used in PIC microcontrollers, which made it easier for me to learn other programming languages such as JavaScript and C#.</p>
                 </div>
 
                 <div class="efeito">
