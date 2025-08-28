@@ -6,11 +6,11 @@
                 <img src="@/assets/imagens/fundocodigodark.png" alt="fundo" :class="{'fundo': cor == true, 'desaparece': cor == false}">
 
                 <div class="apresentacao">        
-                    <p v-if="traduzir == true">Eu sou o Henrique Souzo, Desenvolvedor de Web Sites, Aplicativos Mobile e Jogos com mais de 3 anos de experiência no ramo. 
+                    <p v-if="traduzir == true">Eu sou o Henrique Souzo, tenho 28 anos, Desenvolvedor de Web Sites, Aplicativos Mobile e Jogos com mais de 3 anos de experiência no ramo. 
                         Nasci no Brasil na cidade de São Paulo. Meu sonho é colaborar com sistemas que mude a vida das pessoas para melhor, inclusive a minha,
                         gerando reconhecimento nacional e internacional e poder desfrutar e compartilhar com a minha família as minhas conquistas.                
                     </p>
-                    <p v-else>I'm Henrique Souzo, a Web, Mobile App, and Game Developer with over 3 years of experience. 
+                    <p v-else>I'm Henrique Souzo, I'm 28 years old, a Web, Mobile App, and Game Developer with over 3 years of experience. 
                         Born in São Paulo, Brazil, my dream is to create systems that improve people's lives — including my own — while earning national and international recognition. 
                         Above all, I strive to enjoy and share my achievements with my family.</p>
                 </div>
