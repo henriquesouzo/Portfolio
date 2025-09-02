@@ -9,7 +9,8 @@
             <div class="email conteudo">
                 <img src="@/assets/imagens/email.svg" alt="email">
                 <h2>E-mail</h2>
-                <p>Entre em contato por e-mail.</p>
+                <p v-if="traduzir == true">Entre em contato por e-mail.</p>
+                <p v-else>Contact us by e-mail.</p>
                 <a class="email" href="mailto:hsprograma@gmail.com?subject=Orçamento&body=Escreva sua mensagem aqui." target="_blank">
                     hsprograma@gmail.com
                 </a>
