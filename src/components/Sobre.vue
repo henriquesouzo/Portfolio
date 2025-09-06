@@ -6,11 +6,11 @@
                 <img src="@/assets/imagens/fundocodigodark.png" alt="fundo" :class="{'fundo': cor == true, 'desaparece': cor == false}">
 
                 <div class="apresentacao">        
-                    <p v-if="traduzir == true">Eu sou o Henrique Souzo, tenho 28 anos, Desenvolvedor de Web Sites, Aplicativos Mobile e Jogos com mais de 3 anos de experiência no ramo. 
+                    <p v-if="traduzir == true">Eu sou o Henrique Souzo, tenho 28 anos, Desenvolvedor de Web Sites, Aplicativos Mobile e Jogos com mais de 4 anos de experiência no ramo. 
                         Nasci no Brasil na cidade de São Paulo. Tenho Formação de Bacharelado em Engenharia Elétrica e Técnico em Eletrônica, 
                         por isso, durante esses cursos aprendi a linguagem de programação C que é utilizada em Microprocessadores PIC, devido a isso, facilitou a minha aprendizagem em outras linguagens de programação como Javascript e C#.         
                     </p>
-                    <p v-else>I'm Henrique Souzo, 28 years old, a Developer of Websites, Mobile Applications, and Games with over 3 years of experience in the field.
+                    <p v-else>I'm Henrique Souzo, 28 years old, a Developer of Websites, Mobile Applications, and Games with over 4 years of experience in the field.
                     I was born in Brazil, in the city of São Paulo. I hold a Bachelor's degree in Electrical Engineering and a Technical degree in Electronics.
                     During these studies, I learned the C programming language, used in PIC microcontrollers, which made it easier for me to learn other programming languages such as JavaScript and C#.</p>
                 </div>
